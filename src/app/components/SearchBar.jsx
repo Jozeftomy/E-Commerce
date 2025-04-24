@@ -14,7 +14,7 @@ const SearchBar = () => {
         className="w-[153px] h-[18px] opacity-50 text-black font-poppins font-normal text-[12px] leading-[18px] tracking-[0%] bg-transparent focus:outline-none"
       />
       <img
-        src="images/searchIcon.png"
+        src="images/search.png"
         alt="Search Icon"
         className="w-[24px] h-[24px] object-cover cursor-pointer"
       />
