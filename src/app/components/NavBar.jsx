@@ -13,7 +13,7 @@ const Navbar = () => (
           Exclusive
         </div>
         <div className="flex flex-wrap justify-center gap-4 md:gap-8">
-          <span className="text-base text-black font-poppins">Home</span>
+          <Link href="/home" className="text-base text-black hover:text-gray-600 font-poppins">Home</Link>
           <span className="text-base text-black font-poppins">Contact</span>
           <span className="text-base text-black font-poppins">About</span>
           

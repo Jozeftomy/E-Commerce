@@ -45,7 +45,7 @@ const LoginPage = () => {
           </form>
         </div>
       </div>
-      <div className="w-[1440px] h-[440px] top-[350px] relative">
+      <div className="w-full h-[440px] top-[350px] relative">
   <Footer/>
 </div>
     </>
