@@ -15,7 +15,7 @@ const Home = () => {
     <List />
     </div>
       <img
-        src="/images/frame.png"  
+        src="/Images/frame.png"  
         alt="Custom"
         className="absolute w-[892px] h-[344px] top-[182px] left-[413px] object-cover"
       />
