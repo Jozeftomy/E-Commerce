@@ -19,7 +19,7 @@ const ContactForm = () => {
 
   return (
     <div className="w-[600px] h-auto mx-auto bg-white shadow-lg rounded-md p-6">
-      {/* Title */}
+    
       <h2 className="text-2xl font-poppins font-semibold text-black text-center mb-4">
         Contact Us
       </h2>
