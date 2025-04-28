@@ -31,7 +31,7 @@ const Navbar = () => (
         <SearchBar />
 
         <div className="flex items-center gap-4">
-          <img src="/Images/wishlist.png" alt="Wishlist" className="w-6 md:w-8 h-6 md:h-8 object-contain" />
+          <img src="/Images/wish-list.png" alt="Wishlist" className="w-6 md:w-8 h-6 md:h-8 object-contain" />
           <img src="/Images/cart.png" alt="Cart" className="w-6 md:w-8 h-6 md:h-8 object-contain" />
         </div>
       </div>
