@@ -1,6 +1,7 @@
 import React from 'react'
 import TimerCounter from './TimerCounter'
 
+
 const Poster = () => {
   return (
     <div className="absolute w-[1170px] h-[500px] top-[2526px] left-[135px] bg-black ">

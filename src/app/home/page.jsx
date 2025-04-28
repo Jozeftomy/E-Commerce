@@ -6,37 +6,36 @@ import FlashSales from '../components/FlashSales';
 import BrowseByCategory from '../components/Category';
 import Poster from '../components/Poster';
 
-
 const Home = () => {
   return (
-    <div className="relative"> 
-    <Navbar />
-      <div className="w-[1305px] h-[344px] top-[182px] flex">
-    <List />
+    <div className="relative flex flex-col items-center overflow-x-hidden">
+      <Navbar />
+      <div className="flex flex-col md:flex-row items-center w-full max-w-[1300px] px-4 mt-8 gap-4">
+        <div className="w-full md:w-[400px]">
+          <List />
+        </div>
+        <div className="w-full md:w-[900px]">
+          <img
+            src="/images/frame.png"
+            alt="Custom"
+            className="w-full h-auto object-cover rounded-md"
+          />
+        </div>
+      </div>
+      <div className="w-full max-w-[1300px] px-4 mt-16">
+        <FlashSales />
+      </div>
+      <div className="w-full max-w-[1170px] h-[1px] bg-black opacity-30 my-12" />
+      <div className="w-full max-w-[1300px] px-4 mt-8">
+        <BrowseByCategory />
+      </div>
+      <div className="w-full max-w-[1300px] px-4 mt-16">
+        <div className="w-full h-[300px] md:h-[500px] bg-[url('/images/your-image.jpg')] bg-cover bg-center rounded-md"></div>
+      </div>
+      <div className="w-full max-w-[1300px] px-4 mt-16">
+        <Poster />
+      </div>
     </div>
-      <img
-        src="/images/frame.png"  
-        alt="Custom"
-        className="absolute w-[892px] h-[344px] top-[182px] left-[413px] object-cover"
-      />
-  <div className="absolute w-[1308px] h-[493px] top-[666px] left-[135px] flex gap-[40px]">
- <FlashSales/>
-</div>
-<div className="absolute w-[1170px] top-[1335px] left-[170px] rotate-[-180deg] opacity-30 border border-black border-[0.5px]" />
-
-<div className="absolute w-[1170px] h-[313px] top-[1415px] left-[135px] flex gap-[60px]">
-  <BrowseByCategory/>
-</div>
-
-<div className="absolute w-[1170px] h-[500px] top-[2526px] left-[135px] bg-[url('/images/your-image.jpg')] bg-cover bg-center"></div>
-<div>
-  <Poster/>
-</div>
-
-
-
-</div>
-    
   );
 };
 

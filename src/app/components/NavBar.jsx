@@ -5,6 +5,7 @@ import Link from 'next/link';
 import SearchBar from './SearchBar';
 
 const Navbar = () => (
+  
   <nav className="w-full bg-white shadow-sm px-4 md:px-8 py-4 fixed top-0 left-0 z-50">
     <div className="max-w-screen-xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 md:gap-8">
 
