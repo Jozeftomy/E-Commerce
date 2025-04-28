@@ -14,7 +14,7 @@ const LoginPage = () => {
       <div className="w-[1305px] h-[781px] top-[200px] relative flex gap-[129px]">
         <div className="w-[805px] h-[781px] rounded-tr-[4px] rounded-br-[4px]">
           <img
-            src="/Images/sideimage.png"
+            src="/Images/side-image.png"
             alt="Shopping illustration"
             className="w-full h-full object-cover"
           />
