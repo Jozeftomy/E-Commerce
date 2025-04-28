@@ -1,12 +1,12 @@
 import React from "react";
 
 const categories = [
-  { name: "Phones", image: "/images/cellphone.png" },
-  { name: "Computers", image: "/images/computer.png" },
-  { name: "SmartWatch", image: "/images/smartwatch.png" },
-  { name: "Camera", image: "/images/camera.png" },
-  { name: "HeadPhones", image: "/images/headphone.png" },
-  { name: "Gaming", image: "/images/gamepad.png" },
+  { name: "Phones", image: "/Images/cellphone.png" },
+  { name: "Computers", image: "/Images/computer.png" },
+  { name: "SmartWatch", image: "/Images/smartwatch.png" },
+  { name: "Camera", image: "/Images/camera.png" },
+  { name: "HeadPhones", image: "/Images/headphone.png" },
+  { name: "Gaming", image: "/Images/gamepad.png" },
 ];
 
 const CategoryCard = ({ name, image }) => (
