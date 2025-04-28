@@ -21,8 +21,6 @@ const BrowseByCategory = () => (
     <div className="font-poppins font-semibold text-[16px] leading-[20px] tracking-[0%] text-red-500">
       Categories
     </div>
-
-    {/* Aligning heading and buttons */}
     <div className="flex justify-between items-center mt-2">
       <h2 className="font-inter font-semibold text-[36px] leading-[48px] tracking-[4%] text-black">
         Browse By Category
@@ -43,7 +41,7 @@ const BrowseByCategory = () => (
       </div>
     </div>
 
-    {/* Category cards */}
+   
     <div className="w-[1170px] h-[145px] flex gap-[30px] mt-4">
       {categories.map((category) => (
         <CategoryCard key={category.name} name={category.name} image={category.image} />

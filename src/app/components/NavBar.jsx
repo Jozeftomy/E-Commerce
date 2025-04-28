@@ -15,9 +15,12 @@ const Navbar = () => (
         </div>
         <div className="flex flex-wrap justify-center gap-4 md:gap-8">
           <Link href="/home" className="text-base text-black hover:text-gray-600 font-poppins">Home</Link>
-          <span className="text-base text-black font-poppins">Contact</span>
-          <span className="text-base text-black font-poppins">About</span>
-          
+          <Link href="/contact" className="text-base text-black hover:text-gray-600 font-poppins">
+            Contact
+          </Link>
+          <Link href="/about" className="text-base text-black hover:text-gray-600 font-poppins">
+            About
+          </Link>
           <Link href="/signup" className="text-base text-black hover:text-gray-600 font-poppins">
             SignUp
           </Link>
@@ -28,8 +31,8 @@ const Navbar = () => (
         <SearchBar />
 
         <div className="flex items-center gap-4">
-          <img src="/images/wishlist.png" alt="Wishlist" className="w-6 md:w-8 h-6 md:h-8 object-contain" />
-          <img src="/images/cart.png" alt="Cart" className="w-6 md:w-8 h-6 md:h-8 object-contain" />
+          <img src="/Images/wishlist.png" alt="Wishlist" className="w-6 md:w-8 h-6 md:h-8 object-contain" />
+          <img src="/Images/cart.png" alt="Cart" className="w-6 md:w-8 h-6 md:h-8 object-contain" />
         </div>
       </div>
     </div>
