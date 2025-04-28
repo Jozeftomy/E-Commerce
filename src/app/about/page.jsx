@@ -35,7 +35,6 @@ const About = () => {
                     </div>
                 </div>
 
-                {/* Our Story */}
                 <div className="absolute top-[422px] left-[135px] w-[525px] flex flex-col gap-[24px]">
                     <div className="font-inter font-semibold text-[54px] leading-[64px] text-black">
                         Our Story
@@ -50,7 +49,6 @@ const About = () => {
                     </div>
                 </div>
 
-                {/* Side Image */}
                 <div className="absolute top-[285px] left-[735px] w-[705px] h-[609px] rounded-tl-[4px] rounded-bl-[4px] overflow-hidden">
                     <img 
                         src="Images/about-sideimage.png" 
@@ -59,7 +57,6 @@ const About = () => {
                     />
                 </div>
 
-                {/* Stats Section */}
                 <div className="absolute top-[1034px] left-[135px] w-[1170px] h-[230px] flex gap-[30px]">
                     {[
                         { img: "Images/delivery.png", title: "10.5k", text: "Sellers active on our site" },

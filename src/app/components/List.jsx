@@ -1,6 +1,6 @@
 'use client'
 import React, { useState } from "react";
-import { FaChevronDown } from "react-icons/fa"; // Using FontAwesome icon
+import { FaChevronDown } from "react-icons/fa"; 
 
 const items = [
   { name: "Woman's Fashion", data: ["Dresses", "Shoes", "Bags", "Accessories"] },

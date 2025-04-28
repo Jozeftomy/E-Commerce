@@ -67,7 +67,7 @@ const CountdownTimer = () => {
 const ProductCard = ({ product }) => {
   return (
     <div className="w-[270px] h-[350px] flex flex-col gap-[16px] bg-white border rounded-lg shadow-lg p-4">
-      {/* Product Image with Hover Effects */}
+   
       <div className="relative w-[270px] h-[250px] rounded-[4px] overflow-hidden group">
   <img
     src={product.image}
@@ -75,7 +75,7 @@ const ProductCard = ({ product }) => {
     className="w-full h-full object-cover rounded-[4px]"
   />
 
-  {/* Add to Cart button (visible only on hover) */}
+
   <button className="absolute w-full bottom-0 left-[50%] transform -translate-x-1/2 bg-black text-white px-4 py-1 text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
     Add To Cart
   </button>
