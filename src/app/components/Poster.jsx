@@ -23,7 +23,7 @@ const Poster = () => {
   <div
   className="absolute w-[568px] h-[330px] top-[45px] left-[584px]"
 >
-  <img src="/images/jbl.png" alt="jbl" className="w-full h-full object-cover" />
+  <img src="/Images/jbl.png" alt="jbl" className="w-full h-full object-cover" />
 </div>
 
 
