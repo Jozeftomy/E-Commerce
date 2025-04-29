@@ -34,7 +34,7 @@ const LoginPage = () => {
            <PrimaryButton className="w-auto">Login</PrimaryButton>
           </div>
           <div className="w-[60%] flex justify-end">
-          <Link href="/login" className="text-red-500 text-sm">
+          <Link href="/login" className="text-red-500 text-sm hover:cursor-pointer">
            Forgot Password?
          </Link>
        </div>

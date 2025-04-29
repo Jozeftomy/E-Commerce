@@ -81,7 +81,7 @@ const Page = () => {
           </div>
 
           <div className="w-full flex justify-end">
-            <button className="w-[215px] h-[56px] rounded-[4px] bg-red-500 text-white font-semibold flex items-center justify-center gap-[10px] px-[48px] py-[16px] hover:bg-blue-600 transition-all duration-300">
+            <button className="w-[215px] h-[56px] rounded-[4px] bg-red-500 text-white font-semibold flex items-center justify-center gap-[10px] px-[48px] py-[16px] hover:cursor-pointer">
               Send Message
             </button>
           </div>

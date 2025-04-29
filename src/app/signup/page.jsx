@@ -39,7 +39,7 @@ const SignUpPage = () => {
             </form>
             <p className="text-sm text-center mt-6">
               Already have account?{" "}
-              <Link href="/login" className="text-gray-800 underline">
+              <Link href="/login" className="text-gray-800 underline hover:cursor-pointer">
               Login
             </Link>
             </p>

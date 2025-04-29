@@ -4,6 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import SearchBar from './SearchBar';
 
+
 const Navbar = () => (
   
   <nav className="w-full bg-white shadow-sm px-4 md:px-8 py-4 fixed top-0 left-0 z-50">
@@ -32,7 +33,9 @@ const Navbar = () => (
 
         <div className="flex items-center gap-4">
           <img src="/Images/wish-list.png" alt="Wishlist" className="w-6 md:w-8 h-6 md:h-8 object-contain" />
+          <Link href="/cart"> 
           <img src="/Images/cart.png" alt="Cart" className="w-6 md:w-8 h-6 md:h-8 object-contain" />
+        </Link>
         </div>
       </div>
     </div>

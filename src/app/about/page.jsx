@@ -22,7 +22,7 @@ const About = () => {
             <Navbar />
 
             {/* Main Container */}
-            <div className="relative w-full" style={{ height: '2940px' }}> {/* Total height of all sections */}
+            <div className="relative w-full" style={{ height: '2940px' }}> 
                 
                 {/* Breadcrumb */}
                 <div className="absolute top-[222px] left-[135px] w-[114px] h-[21px] flex gap-[12px] items-center">
