@@ -73,7 +73,7 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex justify-start mt-4">
-            <img src="/Images/socialFrame.png" alt="Social Media Icons" className="w-32 h-8" />
+            <img src="/Images/social-frame.png" alt="Social Media Icons" className="w-32 h-8" />
           </div>
         </div>
 
