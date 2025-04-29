@@ -32,7 +32,10 @@ const Navbar = () => (
         <SearchBar />
 
         <div className="flex items-center gap-4">
+        <Link href="/wishlist"> 
           <img src="/Images/wish-list.png" alt="Wishlist" className="w-6 md:w-8 h-6 md:h-8 object-contain" />
+        </Link>
+          
           <Link href="/cart"> 
           <img src="/Images/cart.png" alt="Cart" className="w-6 md:w-8 h-6 md:h-8 object-contain" />
         </Link>
