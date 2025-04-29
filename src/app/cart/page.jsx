@@ -89,7 +89,7 @@ const Page = () => {
         </div>
 
         {/* Action Buttons */}
-        <div className="w-full h-[56px] rounded-[4px] flex justify-between">
+        <div className="w-full h-[56px] rounded-[4px] flex justify-between ">
           <button className="w-[218px] h-[56px] rounded-[4px] border border-[#00000080] flex items-center justify-center gap-[10px] px-[48px] py-[16px] hover:cursor-pointer">
             Return To Shop
           </button>

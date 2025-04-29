@@ -32,7 +32,7 @@ const Footer = () => {
               type="submit" 
               className="p-2 bg-black text-white rounded-r-md border border-white flex items-center justify-center"
             >
-              <img src="/images/input-icon.png" alt="Submit Icon" className="w-5 h-5" />
+              <img src="/Images/input-icon.png" alt="Submit Icon" className="w-5 h-5" />
             </button>
           </form>
         </div>
