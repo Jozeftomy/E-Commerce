@@ -1,14 +1,17 @@
 'use client';
-
+import { useRouter } from "next/navigation";
 import React, { useState } from 'react';
 import Navbar from '../components/NavBar';
 import Footer from '../components/Footer';
+
+
 
 const QuantitySelector = () => {
   const [quantity, setQuantity] = useState(1);
 
   const increaseQuantity = () => setQuantity(prev => prev + 1);
   const decreaseQuantity = () => setQuantity(prev => (prev > 1 ? prev - 1 : 1));
+
 
   return (
     <div className="w-[72px] h-[44px] rounded-[4px] border-[1.5px] border-[#00000066] flex items-center justify-center gap-[8px] px-[12px] bg-white">
@@ -25,12 +28,25 @@ const QuantitySelector = () => {
   );
 };
 
+const CheckoutButton = () => {
+    const router = useRouter();
+  
+    return (
+      <button 
+        onClick={() => router.push("/checkout")}
+        className="w-[260px] h-[56px] self-center mt-8 bg-[#DB4444] text-white font-poppins font-medium text-[16px] rounded-[4px] flex items-center justify-center px-[48px] py-[16px] hover:cursor-pointer"
+      >
+        Proceed to Checkout
+      </button>
+    );
+  };
+
 const Page = () => {
   return (
     <>
       <Navbar />
 
-      {/* Breadcrumb Navigation */}
+      {/*  Navigation */}
       <div className="w-full flex flex-col items-center">
         <div className="mt-[222px] flex gap-[12px] items-center self-start ml-[135px]">
           <div className="font-poppins font-normal text-[14px] leading-[21px] text-gray-400">Home</div>
@@ -113,9 +129,7 @@ const Page = () => {
                 </div>
               </div>
             </div>
-            <button className="w-[260px] h-[56px] self-center mt-8 bg-[#DB4444] text-white font-poppins font-medium text-[16px] rounded-[4px] flex items-center justify-center px-[48px] py-[16px] hover:cursor-pointer">
-              Proceed to Checkout
-            </button>
+            <CheckoutButton />
           </div>
         </div>
       </div>

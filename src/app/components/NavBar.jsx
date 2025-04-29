@@ -36,6 +36,12 @@ const Navbar = () => (
           <Link href="/cart"> 
           <img src="/Images/cart.png" alt="Cart" className="w-6 md:w-8 h-6 md:h-8 object-contain" />
         </Link>
+        <Link href="/account">
+  <div className="w-[32px] h-[32px] flex items-center justify-center rounded-md hover:cursor-pointer">
+    <img src="/Images/user.png" alt="User Icon" className="w-[20px] h-[20px] object-contain" />
+  </div>
+</Link>
+
         </div>
       </div>
     </div>
