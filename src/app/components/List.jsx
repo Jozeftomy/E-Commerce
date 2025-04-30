@@ -1,6 +1,6 @@
-'use client'
+'use client';
 import React, { useState } from "react";
-import { FaChevronDown } from "react-icons/fa"; 
+import { FaChevronDown } from "react-icons/fa";
 
 const items = [
   { name: "Woman's Fashion", data: ["Dresses", "Shoes", "Bags", "Accessories"] },
@@ -22,24 +22,27 @@ const DropdownList = () => {
   };
 
   return (
-    <div className="absolute top-[182px] left-[135px] w-[217px] flex flex-col">
+    <div className="absolute top-[182px] left-[135px] w-[217px] bg-white shadow-md rounded-md">
       {items.map((item, index) => (
         <div key={index} className="w-full">
-   
           <button
             onClick={() => toggleDropdown(index)}
-            className="w-full flex items-center justify-between px-4 py-2  text-black transition duration-200"
+            className="w-full flex items-center justify-between px-4 py-2 text-black transition duration-200 hover:bg-gray-100"
           >
             {item.name}
-            <FaChevronDown className={`transform transition-transform ${openDropdown === index ? "rotate-180" : ""}`} />
+            <FaChevronDown
+              className={`transform transition-transform ${
+                openDropdown === index ? "rotate-180" : ""
+              }`}
+            />
           </button>
 
           {openDropdown === index && (
-            <div className="mt-2 bg-white ">
+            <div className="bg-gray-50">
               {item.data.map((subItem, subIndex) => (
                 <div
                   key={subIndex}
-                  className="px-4 py-2 text-black cursor-pointer transition duration-200"
+                  className="px-6 py-2 text-sm text-black cursor-pointer hover:bg-gray-100"
                 >
                   {subItem}
                 </div>
