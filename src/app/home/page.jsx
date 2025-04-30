@@ -9,7 +9,7 @@ import Poster from '../components/Poster';
 
 const Home = () => {
   return (
-    <div className="relative"> 
+    <div className="relative bg-white text-black"> 
     <Navbar />
       <div className="w-[1305px] h-[344px] top-[182px] flex">
     <List />
