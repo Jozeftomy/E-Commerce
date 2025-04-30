@@ -12,18 +12,19 @@ const SignUpPage = () => {
       <Navbar />
 
       {/* Container for image + form */}
-      <div className="w-full flex flex-col lg:flex-row items-start justify-start lg:items-center gap-4 mt-[100px] px-4 lg:px-0">
-        {/* Left Image - Flush to left edge */}
-        <div className="w-full lg:w-[60%] max-w-[800px] h-auto rounded-tr-[4px] rounded-br-[4px]">
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-[5%] mt-[100px] px-4">
+        {/* Left Image */}
+       
+        <div className="w-full lg:w-[45%] max-w-[800px] h-auto rounded-tr-[4px] rounded-br-[4px] ">
           <img
             src="/Images/side-image.png"
             alt="Shopping illustration"
             className="w-full h-full object-cover"
           />
         </div>
-
+     
         {/* Signup Form */}
-        <div className="w-full lg:w-[35%] max-w-[400px] mt-8 lg:mt-0">
+        <div className="w-full lg:w-[30%] max-w-[400px] mt-8 lg:mt-0">
           <h2 className="text-3xl font-semibold mb-2">Create an account</h2>
           <p className="text-sm text-gray-600 mb-6">Enter your details below</p>
 
