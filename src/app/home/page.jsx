@@ -9,7 +9,8 @@ import Poster from '../components/Poster';
 
 const Home = () => {
   return (
-    <div className="relative bg-white text-black"> 
+    <div className='bg-white text-black'>
+    <div className="relative "> 
     <Navbar />
       <div className="w-[1305px] h-[344px] top-[182px] flex">
     <List />
@@ -33,7 +34,7 @@ const Home = () => {
   <Poster/>
 </div>
 </div>
-    
+</div>
   );
 };
 
