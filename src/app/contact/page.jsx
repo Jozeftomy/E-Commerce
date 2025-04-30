@@ -19,7 +19,7 @@ const Page = () => {
   ];
 
   return (
-    <div className='bg-white text-black'>
+    <>
       <Navbar />
 
       {/* Breadcrumb */}
@@ -95,7 +95,7 @@ const Page = () => {
       <div className="w-full mt-40">
         <Footer />
       </div>
-    </div>
+    </>
   );
 };
 

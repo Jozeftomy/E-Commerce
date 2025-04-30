@@ -50,7 +50,7 @@ const Home = () => {
   ];
 
   return (
-    <div className='bg-white text-black '>
+    <div className='bg-white text-black w'>
       <div className="relative">
         <Navbar />
         <div className="w-[1305px] h-[344px] top-[182px] flex">
