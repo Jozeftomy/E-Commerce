@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 
 const page = () => {
   return (
+    <div className='bg-white text-black'>
     <div className="min-h-screen flex flex-col">
       <Navbar />
 
@@ -83,6 +84,7 @@ const page = () => {
       </div>
 
       <Footer />
+    </div>
     </div>
   );
 };

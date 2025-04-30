@@ -43,7 +43,7 @@ const CheckoutButton = () => {
 
 const Page = () => {
   return (
-    <>
+    <div className="bg-white text-black">
       <Navbar />
 
       {/*  Navigation */}
@@ -136,7 +136,7 @@ const Page = () => {
       <div className="w-full mt-40">
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
 
