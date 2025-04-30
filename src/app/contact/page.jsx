@@ -19,7 +19,7 @@ const Page = () => {
   ];
 
   return (
-    <>
+    <div className='bg-white text-black'>
       <Navbar />
 
       <div className="w-full flex gap-2 items-center text-sm text-gray-400 px-6 mt-20 sm:justify-start justify-center">
@@ -93,7 +93,7 @@ const Page = () => {
       <div className="w-full mt-40">
         <Footer />
       </div>
-    </>
+    </div>
   )
 }
 

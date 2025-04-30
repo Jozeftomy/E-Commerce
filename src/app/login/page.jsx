@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const LoginPage = () => {
   return (
-    <>
+    <div className="bg-white text-black">
       <div>
         <Navbar />
       </div>
@@ -48,7 +48,7 @@ const LoginPage = () => {
       <div className="w-full h-[440px] top-[350px] relative">
   <Footer/>
 </div>
-    </>
+    </div>
   );
 };
 
