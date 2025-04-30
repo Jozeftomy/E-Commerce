@@ -8,47 +8,57 @@ import Link from "next/link";
 
 const SignUpPage = () => {
   return (
-  <div className="bg-white text-black">
-<div>
-  <Navbar/>
-</div>
-<div className="w-[1305px] h-[781px] top-[200px] relative flex gap-[129px]">
-<div className="w-[805px] h-[781px] rounded-tr-[4px] rounded-br-[4px]">
-<img
-              src="/Images/side-image.png"
-              alt="Shopping illustration"
-              className="w-full h-full object-cover"
-            />
-</div>
-<div className="w-[371px] h-[530px] gap-[48px]">
-<h2 className="text-3xl font-semibold mb-2">Create an account</h2>
-            <p className="text-sm text-gray-600 mb-6">Enter your details below</p>
-            <form className="space-y-4">
-              <InputField type="text" placeholder="Name" />
-              <InputField type="text" placeholder="Email or Phone Number" />
-              <InputField type="password" placeholder="Password" />
-              <PrimaryButton>Create Account</PrimaryButton>
-              <OutlineButton>
-                <img
-                  src="Images/Icon-Google.png"
-                  alt="Google"
-                  className="w-5 h-5"
-                />
-                Sign up with Google
-              </OutlineButton>
-            </form>
-            <p className="text-sm text-center mt-6">
-              Already have account?{" "}
-              <Link href="/login" className="text-gray-800 underline hover:cursor-pointer">
+    <div className="bg-white text-black w-full">
+      <Navbar />
+
+      {/* Container for image + form */}
+      <div className="w-full flex flex-col lg:flex-row items-start justify-start lg:items-center gap-4 mt-[100px] px-4 lg:px-0">
+        {/* Left Image - Flush to left edge */}
+        <div className="w-full lg:w-[60%] max-w-[800px] h-auto rounded-tr-[4px] rounded-br-[4px]">
+          <img
+            src="/Images/side-image.png"
+            alt="Shopping illustration"
+            className="w-full h-full object-cover"
+          />
+        </div>
+
+        {/* Signup Form */}
+        <div className="w-full lg:w-[35%] max-w-[400px] mt-8 lg:mt-0">
+          <h2 className="text-3xl font-semibold mb-2">Create an account</h2>
+          <p className="text-sm text-gray-600 mb-6">Enter your details below</p>
+
+          <form className="space-y-4 w-full">
+            <InputField type="text" placeholder="Name" />
+            <InputField type="text" placeholder="Email or Phone Number" />
+            <InputField type="password" placeholder="Password" />
+            <PrimaryButton>Create Account</PrimaryButton>
+            <OutlineButton>
+              <img
+                src="Images/Icon-Google.png"
+                alt="Google"
+                className="w-5 h-5"
+              />
+              Sign up with Google
+            </OutlineButton>
+          </form>
+
+          <p className="text-sm text-center mt-6">
+            Already have an account?{" "}
+            <Link
+              href="/login"
+              className="text-gray-800 underline hover:cursor-pointer"
+            >
               Login
             </Link>
-            </p>
-</div>
-</div>
-<div className="w-full h-[440px] top-[350px] relative">
-  <Footer/>
-</div>
-</div>
+          </p>
+        </div>
+      </div>
+
+      {/* Footer */}
+      <div className="w-full mt-20">
+        <Footer />
+      </div>
+    </div>
   );
 };
 
