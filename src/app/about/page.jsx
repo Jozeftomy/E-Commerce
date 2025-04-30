@@ -18,7 +18,7 @@ const About = () => {
     ];
 
     return (
-        <>
+        <div className='bg-white text-black'>
             <Navbar />
 
             {/* Main Container */}
@@ -100,7 +100,7 @@ const About = () => {
                     <Footer />
                 </div>
             </div>
-        </>
+        </div>
     );
 };
 
