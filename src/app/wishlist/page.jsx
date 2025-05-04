@@ -1,37 +1,39 @@
 import React from 'react';
 import Navbar from '../components/NavBar';
-import ProductCard from '../components/ProductCard';
+import ProductCards from '../components/ProductCards';
 import Footer from '../components/Footer';
 
 const Page = () => {
-  const products = [
+  const wishlist = [
     {
       name: "Gucci duffle bag",
       price: 960,
       originalPrice: 1160,
-      discount: 35,
-      image: "/images/gucci-bag.jpg",
+      image: "/Images/handbag.png",
       rating: 4.5,
       reviews: 120,
     },
     {
       name: "RGB liquid CPU Cooler",
       price: 1960,
-      image: "/images/cooler.jpg",
+      originalPrice: 2200,
+      image: "/Images/bluetooth-speaker.png",
       rating: 4,
       reviews: 90,
     },
     {
       name: "GP11 Shooter USB Gamepad",
       price: 550,
-      image: "/images/gamepad.jpg",
+      originalPrice: 700,
+      image: "/Images/black-joystick.png",
       rating: 3.5,
       reviews: 60,
     },
     {
       name: "Quilted Satin Jacket",
       price: 750,
-      image: "/images/jacket.jpg",
+      originalPrice: 950,
+      image: "/Images/green-jacket.png",
       rating: 4.8,
       reviews: 150,
     },
@@ -42,10 +44,10 @@ const Page = () => {
       <Navbar />
 
       {/* Main Content */}
-      <div className="flex-grow w-full px-20 mt-20">
+      <div className="flex-grow w-full px-20 mt-50">
         {/* Header Row */}
         <div className="flex justify-between items-center mb-6">
-          <div className="text-[20px] font-normal">Wishlist ({products.length})</div>
+          <div className="text-[20px] font-normal">Wishlist ({wishlist.length})</div>
           <button className="w-[223px] h-[56px] flex items-center justify-center gap-[10px] rounded-[4px] px-[48px] py-[16px] border border-[#00000080] text-black text-[16px] font-medium hover:bg-gray-200 transition">
             Move All To Bag
           </button>
@@ -53,8 +55,8 @@ const Page = () => {
 
         {/* Wishlist Products */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
-          {products.map((item, index) => (
-            <ProductCard key={index} product={item} />
+          {wishlist.map((item, index) => (
+            <ProductCards key={index} product={item} />
           ))}
         </div>
 
@@ -71,14 +73,13 @@ const Page = () => {
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 mb-12">
-            {products.map((item, index) => (
-              <ProductCard key={index} product={item} />
+            {wishlist.map((item, index) => (
+              <ProductCards key={index} product={item} />
             ))}
           </div>
         </div>
       </div>
 
-      {/* Footer */}
       <Footer />
     </div>
   );

@@ -23,14 +23,14 @@ const Page = () => {
       <Navbar />
 
       {/* Breadcrumb */}
-      <div className="w-full flex gap-2 items-center text-sm text-gray-400 px-[5%] mt-20 sm:justify-start justify-center">
+      <div className="w-full flex gap-2 items-center text-sm text-gray-400 px-[5%] mt-40 sm:justify-start justify-center">
         <div>Home</div>
         <div className="text-black">/</div>
         <div className="text-black">Contact</div>
       </div>
 
       {/* Main Content */}
-      <div className="flex flex-col lg:flex-row gap-8 px-[5%] mt-40 justify-center items-start">
+      <div className="flex flex-col lg:flex-row gap-8 px-[5%] mt-20 justify-center items-start">
 
         {/* Contact Info */}
         <div className="w-full lg:w-[30%] bg-white rounded-[4px] p-[6%] shadow-md flex flex-col gap-[32px]">

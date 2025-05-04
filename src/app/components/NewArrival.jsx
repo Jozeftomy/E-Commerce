@@ -3,15 +3,12 @@ import React from 'react';
 const NewArrival = () => {
   return (
     <div className="w-full max-w-7xl mx-auto px-4 py-10">
-      {/* Header */}
       <div className="mb-6">
         <p className="text-red-500 font-semibold">Featured</p>
         <h2 className="text-3xl font-bold">New Arrival</h2>
       </div>
 
-      {/* Grid Section */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-        {/* Left Card */}
         <div className="relative bg-black text-white rounded-lg overflow-hidden w-[570px] h-[600px] flex items-end p-6">
           <img
             src="/Images/playStation.png"
@@ -25,10 +22,7 @@ const NewArrival = () => {
             <button className="underline text-white text-sm">Shop Now</button>
           </div>
         </div>
-
-        {/* Right 3 Cards */}
         <div className="grid grid-cols-1 gap-6">
-          {/* Women's Collections */}
           <div className="relative bg-black text-white rounded-lg overflow-hidden w-[570px] h-[284px] flex items-center justify-between p-6">
             <img
               src="/Images/women.png"
@@ -42,10 +36,7 @@ const NewArrival = () => {
               <button className="underline text-white text-sm">Shop Now</button>
             </div>
           </div>
-
-          {/* Bottom Row */}
           <div className="grid grid-cols-2 gap-6">
-            {/* Speakers */}
             <div className="relative bg-black text-white rounded-lg overflow-hidden h-[284px] w-[270px] flex items-end p-6">
               <img
                 src="/Images/speakers-group.png"
@@ -59,8 +50,6 @@ const NewArrival = () => {
                 <button className="underline text-white text-sm">Shop Now</button>
               </div>
             </div>
-
-            {/* Perfume */}
             <div className="relative bg-black text-white rounded-lg overflow-hidden h-[284px] w-[270px] flex items-end p-6">
               <img
                 src="/Images/perfumes.png"

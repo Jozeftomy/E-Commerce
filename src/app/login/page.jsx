@@ -10,7 +10,7 @@ const LoginPage = () => {
     <div className="bg-white text-black w-full">
       <Navbar />
 
-      <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-[5%] mt-[100px] relative px-4">
+      <div className="w-full flex flex-col lg:flex-row items-center justify-center gap-[5%] mt-[150px] relative px-4">
         {/* Left Image */}
         <div className="w-full lg:w-[45%] max-w-[800px] h-auto rounded-tr-[4px] rounded-br-[4px]">
           <img
