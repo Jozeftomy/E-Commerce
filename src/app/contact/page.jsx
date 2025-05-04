@@ -19,11 +19,12 @@ const Page = () => {
   ];
 
   return (
-    <div className="!bg-white !text-black">
-      <Navbar />
+    <div className="bg-white text-black pt-24 min-h-screen">
+      <div className="bg-white z-50 relative">
+        <Navbar />
+      </div>
 
-      {/* Breadcrumb */}
-      <div className="w-full flex gap-2 items-center text-sm text-gray-400 px-[5%] mt-40 sm:justify-start justify-center">
+      <div className="w-full flex gap-2 items-center text-sm text-gray-400 px-[5%] mt-12 sm:justify-start justify-center">
         <div>Home</div>
         <div className="text-black">/</div>
         <div className="text-black">Contact</div>
