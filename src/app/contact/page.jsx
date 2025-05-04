@@ -19,7 +19,7 @@ const Page = () => {
   ];
 
   return (
-    <>
+    <div className="!bg-white !text-black">
       <Navbar />
 
       {/* Breadcrumb */}
@@ -35,7 +35,7 @@ const Page = () => {
         {/* Contact Info */}
         <div className="w-full lg:w-[30%] bg-white rounded-[4px] p-[6%] shadow-md flex flex-col gap-[32px]">
           {contactInfo.map((info, index) => (
-            <div key={index} className="flex flex-col items-start gap-4 border-b last:border-b-0 pb-6 last:pb-0">
+            <div key={index} className="flex flex-col items-start gap-4 border-b border-gray-200 last:border-b-0 pb-6 last:pb-0">
               <div className="flex items-center gap-4">
                 <div className="w-10 h-10 bg-red-500 rounded-full flex items-center justify-center">
                   <img src={info.icon} alt={info.title} className="w-5 h-5" />
@@ -88,14 +88,13 @@ const Page = () => {
             </button>
           </div>
         </div>
-
       </div>
 
       {/* Footer */}
       <div className="w-full mt-40">
         <Footer />
       </div>
-    </>
+    </div>
   );
 };
 
